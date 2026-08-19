@@ -1,0 +1,22 @@
+[
+  {"app":"Salesforce","field":"mcp","first":"Official Agentforce MCP","verified":"Confirmed","result":"ok","evidence":"https://developer.salesforce.com/docs/apis"},
+  {"app":"Close","field":"self_serve","first":"self-serve, trial","verified":"Confirmed","result":"ok","evidence":"https://developer.close.com"},
+  {"app":"Zendesk","field":"mcp","first":"Community + emerging official","verified":"Confirmed (official beta shipped)","result":"ok","evidence":"https://developer.zendesk.com/api-reference"},
+  {"app":"Front","field":"self_serve","first":"self-serve","verified":"Confirmed","result":"ok","evidence":"https://dev.frontapp.com/"},
+  {"app":"Slack","field":"auth","first":"OAuth2","verified":"Confirmed","result":"ok","evidence":"https://api.slack.com/"},
+  {"app":"Discord","field":"auth","first":"OAuth2 + Bot token","verified":"Confirmed","result":"ok","evidence":"https://discord.com/developers/docs/intro"},
+  {"app":"Google Ads","field":"self_serve","first":"gated, dev token review","verified":"Confirmed","result":"ok","evidence":"https://developers.google.com/google-ads/api/docs/start"},
+  {"app":"Mailchimp","field":"self_serve","first":"self-serve","verified":"Confirmed","result":"ok","evidence":"https://mailchimp.com/developer/"},
+  {"app":"Shopify","field":"mcp","first":"Official Shopify MCP","verified":"Confirmed","result":"ok","evidence":"https://shopify.dev/docs/api"},
+  {"app":"Gumroad","field":"self_serve","first":"self-serve","verified":"Confirmed","result":"ok","evidence":"https://help.gumroad.com/article/280-gumroad-api"},
+  {"app":"Ahrefs","field":"self_serve","first":"gated, Enterprise-only","verified":"self-serve from Lite plan up (2026 pricing change)","result":"miss","evidence":"https://trackseo.pro/blog/ahrefs-pricing"},
+  {"app":"DataForSEO","field":"self_serve","first":"self-serve","verified":"Confirmed","result":"ok","evidence":"https://docs.dataforseo.com/"},
+  {"app":"GitHub","field":"mcp","first":"Official GitHub MCP","verified":"Confirmed","result":"ok","evidence":"https://docs.github.com/rest"},
+  {"app":"Cloudflare","field":"mcp","first":"Official (multiple servers)","verified":"Confirmed","result":"ok","evidence":"https://developers.cloudflare.com/api/"},
+  {"app":"Notion","field":"auth","first":"OAuth2 + internal token","verified":"Confirmed","result":"ok","evidence":"https://developers.notion.com/"},
+  {"app":"Linear","field":"api_surface","first":"GraphQL","verified":"Confirmed","result":"ok","evidence":"https://developers.linear.app/docs"},
+  {"app":"Stripe","field":"mcp","first":"Official Stripe MCP","verified":"Confirmed","result":"ok","evidence":"https://stripe.com/docs/api"},
+  {"app":"QuickBooks","field":"auth","first":"OAuth2","verified":"Confirmed","result":"ok","evidence":"https://developer.intuit.com/app/developer/qbo/docs/get-started"},
+  {"app":"Otter.ai","field":"self_serve","first":"gated, \"reportedly Business tier\"","verified":"MCP is free-plan-friendly; REST API/webhooks are Enterprise-only","result":"miss","evidence":"https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"},
+  {"app":"Devin","field":"self_serve","first":"gated, needs paid seat","verified":"Confirmed (live-search verified from the start)","result":"ok","evidence":"https://docs.devin.ai/work-with-devin/devin-mcp"}
+]

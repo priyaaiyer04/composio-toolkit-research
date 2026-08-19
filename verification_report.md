@@ -8,7 +8,8 @@ Two tiers of checking were applied, not just one blended "accuracy" number:
    genuinely uncertain from general knowledge — niche B2B tools, apps with recent
    product changes, or apps I suspected might not have public docs at all — the
    *first* pass already went through live web search + doc reads before an answer
-   was recorded. These are marked `source: "live_search"` in `data/apps.py`.
+   was recorded. These are marked `source: "live_search"` in `apps.py` and
+   listed in `live_search_log.md`.
    Apps: DealCloud, Attio, Pylon, Plain, Waterfall.io, MrScraper, fanbasis, Devin,
    Ahrefs, Otter.ai.
 
@@ -54,13 +55,17 @@ Two tiers of checking were applied, not just one blended "accuracy" number:
   tier for a product that changed its packaging in 2026, after a training
   cutoff. This is the single most common error type to expect from an LLM-only
   research pass, and it's exactly what a live-search verification loop catches.
-- The 10 apps that were live-search-first from the start (see above) are not
-  double-counted in this sample; their accuracy is closer to the source docs
-  by construction, though DealCloud's OAuth2 client-credentials nuance and
-  Pylon's "MCP is OAuth-only even though the REST API is a static token" split
-  are both details that a naive single-search pass could easily have missed
-  and were only caught by reading past the first search result to the
-  dedicated auth pages.
+- 3 of the 20 sampled apps — Ahrefs, Devin, and Otter.ai — were also flagged
+  live-search-first from the start, since they were already the ones with the
+  least certain public documentation. That overlap is exactly where the two
+  real misses (Ahrefs, Otter.ai) turned up: the apps flagged as needing extra
+  scrutiny were the ones that actually needed it. The other 7 live-search-first
+  apps (DealCloud, Attio, Pylon, Plain, Waterfall.io, MrScraper, fanbasis) were
+  not part of the 20-app sample, though DealCloud's OAuth2 client-credentials
+  nuance and Pylon's "MCP is OAuth-only even though the REST API is a static
+  token" split are both details that a naive single-search pass could easily
+  have missed and were only caught by reading past the first search result to
+  the dedicated auth pages.
 
 ## Where the agent was honestly defeated
 

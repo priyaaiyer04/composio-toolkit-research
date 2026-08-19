@@ -1,95 +1,94 @@
 # Composio 100-App Toolkit Research
 
-A research pass over 100 apps (10 categories) assessing agent-toolkit readiness:
-auth model, self-serve vs. gated access, API surface, existing MCP support, and a
-buildability verdict — plus the agent pipeline that produced it and a verification
-pass that checks its own accuracy.
+[View the live case study](https://priyaaiyer04.github.io/composio-toolkit-research/) | [View the source repository](https://github.com/priyaaiyer04/composio-toolkit-research)
 
-**Live deliverable:** `site/index.html` (single self-contained page, no build step —
-open it directly or deploy the `site/` folder to GitHub Pages).
+A research pass over 100 apps across 10 categories, assessing agent-toolkit readiness: authentication model, self-serve versus gated access, API surface, existing MCP support, buildability verdict, and evidence. The single-page case study also presents the cross-app patterns, research-agent workflow, and verification results.
 
-## Repo layout
+## Repository layout
 
-```
-data/
-  apps.py                 # the 100-app dataset (source of truth), with per-app
-                           # `source` tag: "live_search" (verified live during
-                           # research) or "trained_knowledge" (mature, well-known
-                           # API, answered directly then spot-checked)
-  apps.json               # same data, exported for the HTML page
-
-agent/
-  research_agent.py       # runnable pipeline: Claude + web_search tool researches
-                           # one app at a time and returns strict-schema JSON
-
-verification/
-  verification_report.md  # methodology, 20-app sample, hits/misses, before/after
-                           # accuracy, and the apps the agent honestly couldn't
-                           # resolve
-  verify_sample.json       # the same sample, structured for the page
-
-site/
-  template.html           # HTML shell with `__APPS_JSON__` / `__VERIFY_JSON__`
-                           # placeholders
-  index.html               # built output — apps.json + verify_sample.json
-                           # injected into template.html (see build command below)
+```text
+index.html               Single self-contained case-study page and final dataset
+apps.py                  Python source dataset for all 100 apps
+apps_input.json          100-app input list for a fresh agent run
+research_agent.py        Runnable first-pass research pipeline (Anthropic + web search)
+verification_report.md   20-app verification methodology, results, and corrections
+verification_sample.json Machine-readable 20-app verification sample
+live_search_log.md       Evidence log for the 10 live-search-first records
+check_evidence_links.py  Concurrent HTTP evidence-link checker
+evidence_link_report.json Generated report from the latest evidence-link run
+verify_artifacts.py      Local data/page consistency validator
+README.md                This guide
+browser_use_check.py     Playwright browser-use verification pass over all 100 evidence URLs
+browser_use_verification.md  Methodology, results, and honest findings from the browser-use pass
 ```
 
-## How this run was actually produced
+`index.html` is deployed directly from the repository root using GitHub Pages. It has no build step or runtime API calls.
 
-This sandbox had no `ANTHROPIC_API_KEY`, so `agent/research_agent.py` could not be
-executed end-to-end here. Instead, the same research was performed *live*, using
-the same "search first, answer in the app's own words, cite the doc URL" discipline
-the script encodes — for the 10 apps flagged `source: "live_search"` in
-`data/apps.py`, every field came from a real search + doc read in this session
-(you can see the queries and sources in the conversation transcript). The
-remaining 90 apps are mature, extremely well-documented public APIs (Stripe,
-GitHub, Notion, Shopify, Slack, etc.) that were answered directly and then
-spot-checked — see `verification/verification_report.md` for exactly which ones
-and what the checking caught (it caught two real errors: stale Ahrefs pricing-tier
-info, and an imprecise Otter.ai claim — both corrected in `data/apps.py`).
+## Research method
 
-**To run the pipeline for real** against all 100 apps (or any new list):
+The pipeline asks a web-search-enabled model to find first-party developer documentation for each app and return a strict JSON record containing category, auth, access model, API surface, MCP status, buildability verdict, blocker, and an evidence URL.
 
-```bash
-export ANTHROPIC_API_KEY=sk-ant-...
-python agent/research_agent.py --apps agent/apps_input.json --out data/raw_pass.json
+The final dataset combines two research paths:
+
+- 10 uncertain or niche apps were researched live first and tagged `source: "live_search"` in `apps.py`.
+- 90 mature APIs were drafted from established knowledge, then a stratified 20-app sample was checked against current documentation.
+
+The verification pass found and corrected two first-pass issues: stale Ahrefs access-tier information and an imprecise Otter.ai API/MCP access claim. See [verification_report.md](verification_report.md) for the full sample and methodology.
+
+## Run the research agent
+
+Requirements: Python 3.9+ and an `ANTHROPIC_API_KEY`. The script uses only the Python standard library.
+
+Create an input JSON file containing app names and optional documentation hints:
+
+```json
+[
+  {"app": "Salesforce", "hint": "salesforce.com"},
+  {"app": "HubSpot", "hint": "hubspot.com"}
+]
 ```
 
-This will re-derive the same fields via the model's own live web search rather
-than the human-in-the-loop live search used to produce this snapshot. Compare its
-output against `data/apps.py` as a regression check.
+Then run:
 
-## Rebuilding the HTML page after editing the data
-
-```bash
-python3 -c "
-import json
-apps = open('data/apps.json').read()
-verify = open('verification/verify_sample.json').read()
-tpl = open('site/template.html').read()
-out = tpl.replace('__APPS_JSON__', apps).replace('__VERIFY_JSON__', verify)
-open('site/index.html','w').write(out)
-"
+```powershell
+$env:ANTHROPIC_API_KEY = "sk-ant-..."
+python research_agent.py --apps apps_input.json --out raw_pass.json
 ```
 
-## Deploying to GitHub Pages
+The output is a JSON array of strict-schema research records. Review and verify the access-tier and MCP fields against current first-party docs before incorporating new results into the case study; these are the fields most likely to change.
 
-1. Push this repo.
-2. Settings → Pages → Deploy from branch → root (or `/site` as the folder, then
-   rename `index.html` accordingly, or copy `site/index.html` to the repo root).
-3. The page is fully static — no server, no API calls at runtime, no external
-   dependencies beyond the fonts loaded from Google Fonts (optional; the CSS
-   falls back to system fonts if that's blocked).
+`apps_input.json` contains the complete 100-app research set. Its `hint` values are the retained evidence URLs from the current dataset, so a rerun starts from the same documentation leads rather than an unspecified app list.
 
-## Honesty notes (per the assignment's own rules)
+## Verification artifacts
 
-- Two apps had a confidently-wrong first-pass answer, both caught and corrected
-  by the verification loop (see `verification_report.md`). Both were the same
-  failure mode: a stale mental model of a pricing/access tier that changed in 2026.
-- Four apps defeated first-party-docs discovery entirely (fanbasis, Consensus,
-  NotebookLM's consumer product, iPayX) and are marked `blocked` with an honest
-  explanation rather than a guessed answer.
-- Accuracy is reported over the *sample actually checked* (20/100 by hand +
-  10/100 live-search-first at the source = 30% of the dataset directly verified
-  against docs), not asserted for the full 100.
+The human-check sample is available in [verification_sample.json](verification_sample.json). Each of its 20 records contains the field tested, first-pass result, verified result, outcome, and evidence URL. The ten records researched live from the start are listed separately in [live_search_log.md](live_search_log.md).
+
+You can verify the artifact counts without API credentials:
+
+```powershell
+python verify_artifacts.py
+```
+
+This verifies the 100-agent input list, the 20-record verification sample, the two documented misses, and that the data embedded in `index.html` matches the source artifacts.
+
+Check the current reachability of all 100 evidence URLs:
+
+```powershell
+python check_evidence_links.py --out evidence_link_report.json
+```
+
+The report stores every HTTP status, redirect target, response type, elapsed time, and a summary by outcome. `restricted` means a page responded but blocks automated access; it is not treated as a missing source.
+
+## Local viewing and deployment
+
+Open `index.html` directly in a browser to review the page locally. The published version is available at:
+
+<https://priyaaiyer04.github.io/composio-toolkit-research/>
+
+GitHub Pages is configured to publish the repository root, so pushing changes to the configured publishing branch updates the page.
+
+## Scope and limitations
+
+- The reported accuracy is limited to the 20-app stratified sample: 18/20 (90%) before correction and 20/20 (100%) afterward.
+- 3 of the 20 sampled apps — Ahrefs, Devin, and Otter.ai — were also flagged live-search-first from the start, since they were already the ones with the least certain public documentation. That overlap is exactly where the two real misses (Ahrefs, Otter.ai) turned up: the apps flagged as needing extra scrutiny were the ones that actually needed it.
+- Of the 11 blocked apps, 3 (fanbasis, Consensus, NotebookLM) had no discoverable first-party API documentation at all and are marked blocked rather than guessed. A 4th, iPayX, is marked partial rather than blocked — its docs exist but are too thin to confirm the full API surface, so it's flagged low-confidence instead of filled in.

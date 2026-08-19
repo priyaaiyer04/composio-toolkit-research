@@ -1,0 +1,402 @@
+[
+  {
+    "app": "Salesforce",
+    "hint": "https://developer.salesforce.com/docs/apis"
+  },
+  {
+    "app": "HubSpot",
+    "hint": "https://developers.hubspot.com/docs/api/overview"
+  },
+  {
+    "app": "Pipedrive",
+    "hint": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  {
+    "app": "Attio",
+    "hint": "https://developers.attio.com"
+  },
+  {
+    "app": "Twenty",
+    "hint": "https://twenty.com/developers"
+  },
+  {
+    "app": "Podio",
+    "hint": "https://developers.podio.com"
+  },
+  {
+    "app": "Zoho CRM",
+    "hint": "https://www.zoho.com/crm/developer/docs/api/v7/"
+  },
+  {
+    "app": "Close",
+    "hint": "https://developer.close.com"
+  },
+  {
+    "app": "Copper",
+    "hint": "https://developer.copper.com/"
+  },
+  {
+    "app": "DealCloud",
+    "hint": "https://api.docs.dealcloud.com/docs/apikeys"
+  },
+  {
+    "app": "Zendesk",
+    "hint": "https://developer.zendesk.com/api-reference"
+  },
+  {
+    "app": "Intercom",
+    "hint": "https://developers.intercom.com/docs/references/introduction"
+  },
+  {
+    "app": "Freshdesk",
+    "hint": "https://developers.freshdesk.com/api/"
+  },
+  {
+    "app": "Front",
+    "hint": "https://dev.frontapp.com/"
+  },
+  {
+    "app": "Pylon",
+    "hint": "https://docs.usepylon.com/pylon-docs/developer/api/authentication"
+  },
+  {
+    "app": "LiveAgent",
+    "hint": "https://support.liveagent.com/911737-API-v3"
+  },
+  {
+    "app": "Plain",
+    "hint": "https://www.plain.com/docs/graphql/authentication"
+  },
+  {
+    "app": "Help Scout",
+    "hint": "https://developer.helpscout.com/"
+  },
+  {
+    "app": "Gorgias",
+    "hint": "https://developers.gorgias.com/"
+  },
+  {
+    "app": "Gladly",
+    "hint": "https://developer.gladly.com/"
+  },
+  {
+    "app": "Slack",
+    "hint": "https://api.slack.com/"
+  },
+  {
+    "app": "Twilio",
+    "hint": "https://www.twilio.com/docs/usage/api"
+  },
+  {
+    "app": "Zoho Cliq",
+    "hint": "https://www.zoho.com/cliq/help/restapi/"
+  },
+  {
+    "app": "Lark (Larksuite)",
+    "hint": "https://open.larksuite.com/document"
+  },
+  {
+    "app": "Pumble",
+    "hint": "https://pumble.com/help/integrations/api"
+  },
+  {
+    "app": "Discord",
+    "hint": "https://discord.com/developers/docs/intro"
+  },
+  {
+    "app": "Telegram",
+    "hint": "https://core.telegram.org/"
+  },
+  {
+    "app": "WhatsApp Business",
+    "hint": "https://developers.facebook.com/docs/whatsapp"
+  },
+  {
+    "app": "Aircall",
+    "hint": "https://developer.aircall.io/"
+  },
+  {
+    "app": "Vonage",
+    "hint": "https://developer.vonage.com/"
+  },
+  {
+    "app": "Google Ads",
+    "hint": "https://developers.google.com/google-ads/api/docs/start"
+  },
+  {
+    "app": "Meta Ads",
+    "hint": "https://developers.facebook.com/docs/marketing-apis"
+  },
+  {
+    "app": "LinkedIn Ads",
+    "hint": "https://learn.microsoft.com/linkedin/marketing/"
+  },
+  {
+    "app": "GoHighLevel",
+    "hint": "https://highlevel.stoplight.io/"
+  },
+  {
+    "app": "Mailchimp",
+    "hint": "https://mailchimp.com/developer/"
+  },
+  {
+    "app": "Klaviyo",
+    "hint": "https://developers.klaviyo.com/en"
+  },
+  {
+    "app": "systeme.io",
+    "hint": "https://developer.systeme.io/"
+  },
+  {
+    "app": "Pinterest",
+    "hint": "https://developers.pinterest.com/docs/getting-started/authentication/"
+  },
+  {
+    "app": "Threads (Meta)",
+    "hint": "https://developers.facebook.com/docs/threads"
+  },
+  {
+    "app": "SendGrid",
+    "hint": "https://www.twilio.com/docs/sendgrid/api-reference"
+  },
+  {
+    "app": "Shopify",
+    "hint": "https://shopify.dev/docs/api"
+  },
+  {
+    "app": "WooCommerce",
+    "hint": "https://woocommerce.com/document/woocommerce-rest-api/"
+  },
+  {
+    "app": "BigCommerce",
+    "hint": "https://developer.bigcommerce.com/docs/rest-catalog"
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "hint": "https://developer.salesforce.com/docs/commerce"
+  },
+  {
+    "app": "Magento (Adobe Commerce)",
+    "hint": "https://developer.adobe.com/commerce/webapi/"
+  },
+  {
+    "app": "Squarespace",
+    "hint": "https://developers.squarespace.com/commerce-apis"
+  },
+  {
+    "app": "Ecwid",
+    "hint": "https://api-docs.ecwid.com/"
+  },
+  {
+    "app": "Gumroad",
+    "hint": "https://help.gumroad.com/article/280-gumroad-api"
+  },
+  {
+    "app": "Amazon Selling Partner (SP-API)",
+    "hint": "https://developer-docs.amazon.com/sp-api/"
+  },
+  {
+    "app": "fanbasis",
+    "hint": "https://stackgo.io/integration/sales-crm/fanbasis/"
+  },
+  {
+    "app": "DataForSEO",
+    "hint": "https://docs.dataforseo.com/"
+  },
+  {
+    "app": "SE Ranking",
+    "hint": "https://seranking.com/api.html"
+  },
+  {
+    "app": "Ahrefs",
+    "hint": "https://trackseo.pro/blog/ahrefs-pricing"
+  },
+  {
+    "app": "MrScraper",
+    "hint": "https://docs.mrscraper.com/docs/features/activating-api"
+  },
+  {
+    "app": "Apify",
+    "hint": "https://docs.apify.com/api/v2"
+  },
+  {
+    "app": "Firecrawl",
+    "hint": "https://docs.firecrawl.dev/"
+  },
+  {
+    "app": "Bright Data",
+    "hint": "https://docs.brightdata.com/"
+  },
+  {
+    "app": "Sherlock",
+    "hint": "https://github.com/sherlock-project/sherlock"
+  },
+  {
+    "app": "Waterfall.io",
+    "hint": "https://www.waterfall.io/"
+  },
+  {
+    "app": "Clay",
+    "hint": "https://developers.clay.com/quickstart"
+  },
+  {
+    "app": "GitHub",
+    "hint": "https://docs.github.com/rest"
+  },
+  {
+    "app": "Vercel",
+    "hint": "https://vercel.com/docs/rest-api"
+  },
+  {
+    "app": "Netlify",
+    "hint": "https://docs.netlify.com/api/get-started/"
+  },
+  {
+    "app": "Cloudflare",
+    "hint": "https://developers.cloudflare.com/api/"
+  },
+  {
+    "app": "Supabase",
+    "hint": "https://supabase.com/docs/guides/api"
+  },
+  {
+    "app": "Neo4j",
+    "hint": "https://neo4j.com/docs/aura/api/overview/"
+  },
+  {
+    "app": "Snowflake",
+    "hint": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+  },
+  {
+    "app": "MongoDB Atlas",
+    "hint": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+  },
+  {
+    "app": "Datadog",
+    "hint": "https://docs.datadoghq.com/api/latest/"
+  },
+  {
+    "app": "Sentry",
+    "hint": "https://docs.sentry.io/api/"
+  },
+  {
+    "app": "Notion",
+    "hint": "https://developers.notion.com/"
+  },
+  {
+    "app": "Airtable",
+    "hint": "https://airtable.com/developers/web/api/introduction"
+  },
+  {
+    "app": "Linear",
+    "hint": "https://developers.linear.app/docs"
+  },
+  {
+    "app": "Jira",
+    "hint": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  {
+    "app": "Asana",
+    "hint": "https://developers.asana.com/docs"
+  },
+  {
+    "app": "Monday.com",
+    "hint": "https://developer.monday.com/api-reference/docs"
+  },
+  {
+    "app": "ClickUp",
+    "hint": "https://developer.clickup.com/docs"
+  },
+  {
+    "app": "Coda",
+    "hint": "https://coda.io/developers/apis/v1"
+  },
+  {
+    "app": "Smartsheet",
+    "hint": "https://developers.smartsheet.com/api/smartsheet/openapi/home"
+  },
+  {
+    "app": "Harvest",
+    "hint": "https://help.getharvest.com/api-v2/"
+  },
+  {
+    "app": "Stripe",
+    "hint": "https://stripe.com/docs/api"
+  },
+  {
+    "app": "Plaid",
+    "hint": "https://plaid.com/docs/"
+  },
+  {
+    "app": "Binance",
+    "hint": "https://binance-docs.github.io/apidocs/spot/en/"
+  },
+  {
+    "app": "Paygent Connect",
+    "hint": "https://www.nmi.com/"
+  },
+  {
+    "app": "iPayX",
+    "hint": "https://ipayx.ai/docs"
+  },
+  {
+    "app": "QuickBooks",
+    "hint": "https://developer.intuit.com/app/developer/qbo/docs/get-started"
+  },
+  {
+    "app": "Xero",
+    "hint": "https://developer.xero.com/documentation/"
+  },
+  {
+    "app": "Brex",
+    "hint": "https://developer.brex.com/"
+  },
+  {
+    "app": "Ramp",
+    "hint": "https://docs.ramp.com/developer-api/v1/overview"
+  },
+  {
+    "app": "PitchBook",
+    "hint": "https://pitchbook.com/help/PitchBook-api"
+  },
+  {
+    "app": "NotebookLM",
+    "hint": "https://cloud.google.com/gemini"
+  },
+  {
+    "app": "Otter.ai",
+    "hint": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  {
+    "app": "Fathom",
+    "hint": "https://fathom.video/"
+  },
+  {
+    "app": "Consensus",
+    "hint": "https://consensus.app/"
+  },
+  {
+    "app": "Reducto",
+    "hint": "https://reducto.ai/"
+  },
+  {
+    "app": "Devin",
+    "hint": "https://docs.devin.ai/work-with-devin/devin-mcp"
+  },
+  {
+    "app": "higgsfield",
+    "hint": "https://higgsfield.ai/"
+  },
+  {
+    "app": "Mermaid CLI",
+    "hint": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  {
+    "app": "YouTube Transcript (transcriptapi.com)",
+    "hint": "https://transcriptapi.com/"
+  },
+  {
+    "app": "Grain",
+    "hint": "https://grain.com/"
+  }
+]

@@ -17,8 +17,8 @@ alone. Every claim must carry the URL it came from in `evidence`.
 
 WHERE A HUMAN WAS NEEDED
 -------------------------
-This script automates the *first pass*. A human (or a second verification
-agent, see /verification/verify_sample.py) is still required to:
+This script automates the *first pass*. A human (using
+`verification_sample.json` and `verification_report.md`) is still required to:
   1. Spot-check a sample against the docs by hand (auth flows and gating
      rules change -- e.g. Ahrefs opened its API to all paid plans in 2026,
      which a stale training cutoff would get wrong).
@@ -32,7 +32,7 @@ agent, see /verification/verify_sample.py) is still required to:
 USAGE
 -----
     export ANTHROPIC_API_KEY=sk-ant-...
-    python research_agent.py --apps apps_input.json --out ../data/raw_pass.json
+    python research_agent.py --apps apps_input.json --out raw_pass.json
 
 `apps_input.json` is a flat list of {"app": "...", "hint": "..."} objects,
 one per row of the assignment's 100-app table.

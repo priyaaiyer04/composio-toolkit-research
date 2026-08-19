@@ -82,7 +82,7 @@ dict(id=15, app="Pylon", category="Support & Helpdesk", one_liner="B2B support/S
 dict(id=16, app="LiveAgent", category="Support & Helpdesk", one_liner="Multi-channel helpdesk software.",
      auth=["API key"], self_serve="self-serve", gate_reason="Free trial, key from admin panel.",
      api_surface="REST (medium)", mcp="None found",
-     verdict="ready", blocker=None, evidence="https://www.ladesk.com/api/", source="trained_knowledge"),
+     verdict="ready", blocker=None, evidence="https://www.liveagent.com/features/api/", source="trained_knowledge"),
 dict(id=17, app="Plain", category="Support & Helpdesk", one_liner="API-first B2B customer support platform.",
      auth=["API key (Machine Users)"], self_serve="self-serve", gate_reason="Free tier; machine-user API keys self-generated, fine-grained scopes.",
      api_surface="GraphQL only (one of the few GraphQL-native support tools)", mcp="No dedicated MCP found (GraphQL SDK + webhooks)",
@@ -266,7 +266,7 @@ dict(id=59, app="Waterfall.io", category="Data/SEO/Scraping", one_liner="Contact
 dict(id=60, app="Clay", category="Data/SEO/Scraping", one_liner="Go-to-market data enrichment & workflow platform.",
      auth=["API key"], self_serve="self-serve", gate_reason="Free tier with credits; key from workspace settings.",
      api_surface="REST (narrow — table/webhook triggers, not a full data API)", mcp="Official Clay MCP",
-     verdict="ready", blocker="Most 'API surface' is really inbound webhooks into Clay tables, not outbound data pull.", evidence="https://www.clay.com/university/api", source="trained_knowledge"),
+     verdict="ready", blocker="Most 'API surface' is really inbound webhooks into Clay tables, not outbound data pull.", evidence="https://developers.clay.com/", source="trained_knowledge"),
 
 # ---------------- 7. Developer, Infra & Data platforms ----------------
 dict(id=61, app="GitHub", category="Developer/Infra/Data", one_liner="Code hosting, CI/CD, and collaboration platform.",
@@ -292,7 +292,7 @@ dict(id=65, app="Supabase", category="Developer/Infra/Data", one_liner="Open-sou
 dict(id=66, app="Neo4j", category="Developer/Infra/Data", one_liner="Graph database platform.",
      auth=["Basic (user/pass)", "Bearer (Aura API)"], self_serve="self-serve", gate_reason="Free AuraDB tier, credentials on signup.",
      api_surface="Bolt driver protocol + REST (Aura management), narrow REST surface", mcp="Official Neo4j MCP (Cypher/graph tools)",
-     verdict="ready", blocker=None, evidence="https://neo4j.com/docs/aura/api/", source="trained_knowledge"),
+     verdict="ready", blocker=None, evidence="https://neo4j.com/docs/mcp/current/", source="trained_knowledge"),
 dict(id=67, app="Snowflake", category="Developer/Infra/Data", one_liner="Cloud data warehouse platform.",
      auth=["OAuth2", "Key-pair (JWT)", "Basic"], self_serve="self-serve", gate_reason="Free trial account, key-pair auth self-configured.",
      api_surface="REST (SQL API, broad) + Snowpark", mcp="Official Snowflake Cortex/Agent MCP",
@@ -344,9 +344,9 @@ dict(id=78, app="Coda", category="Productivity/PM", one_liner="Docs that work li
      api_surface="REST (broad)", mcp="Official Coda MCP",
      verdict="ready", blocker=None, evidence="https://coda.io/developers/apis/v1", source="trained_knowledge"),
 dict(id=79, app="Smartsheet", category="Productivity/PM", one_liner="Spreadsheet-based work management.",
-     auth=["OAuth2", "API access token"], self_serve="self-serve", gate_reason="Free trial, token from account settings.",
+     auth=["OAuth2", "API access token"], self_serve="gated", gate_reason="Smartsheet's own docs restrict API access to Business and Enterprise plans; free/Pro accounts cannot generate API tokens (verification correction: was previously marked self-serve).",
      api_surface="REST (broad)", mcp="None official",
-     verdict="ready", blocker=None, evidence="https://developers.smartsheet.com/api/smartsheet", source="trained_knowledge"),
+     verdict="ready", blocker="Requires a paid Business/Enterprise plan, not just a free account.", evidence="https://developers.smartsheet.com/", source="trained_knowledge"),
 dict(id=80, app="Harvest", category="Productivity/PM", one_liner="Time tracking & invoicing tool.",
      auth=["OAuth2", "Personal access token"], self_serve="self-serve", gate_reason="Free trial, PAT self-generated.",
      api_surface="REST (medium)", mcp="None official",
@@ -392,7 +392,7 @@ dict(id=89, app="Ramp", category="Finance/Fintech", one_liner="Corporate cards &
 dict(id=90, app="PitchBook", category="Finance/Fintech", one_liner="Private-market/M&A research data platform.",
      auth=["API key"], self_serve="gated", gate_reason="Enterprise subscription (contact-sales) required for any API access.",
      api_surface="REST (broad, but entirely paywalled)", mcp="None found",
-     verdict="blocked", blocker="No public signup at all — fully sales-gated data license.", evidence="https://pitchbook.com/", source="trained_knowledge"),
+     verdict="blocked", blocker="No public signup at all — fully sales-gated data license.", evidence="https://pitchbook.com/help/PitchBook-api", source="trained_knowledge"),
 
 # ---------------- 10. AI, Research & Media-native ----------------
 dict(id=91, app="NotebookLM", category="AI/Research/Media", one_liner="Google's AI research/notebook tool.",

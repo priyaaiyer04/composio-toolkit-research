@@ -1,0 +1,1594 @@
+{
+  "checker": "browser_use_check.py (Playwright, headless Chromium)",
+  "total": 100,
+  "summary": {
+    "no_match": 30,
+    "verified": 41,
+    "partial": 29
+  },
+  "results": [
+    {
+      "app": "Salesforce",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "HubSpot",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Pipedrive",
+      "url": "https://developers.pipedrive.com/docs/api/v1",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "oauth",
+        "token"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Attio",
+      "url": "https://developers.attio.com",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp"
+      ],
+      "missing_claims": [
+        "api_key",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Twenty",
+      "url": "https://twenty.com/developers",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": [
+        "api_key"
+      ]
+    },
+    {
+      "app": "Podio",
+      "url": "https://developers.podio.com",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "Zoho CRM",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v7/",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Close",
+      "url": "https://developer.close.com",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Copper",
+      "url": "https://developer.copper.com/",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key"
+      ]
+    },
+    {
+      "app": "DealCloud",
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "expected_claims": [
+        "client_credentials",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp"
+      ],
+      "missing_claims": [
+        "client_credentials",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Zendesk",
+      "url": "https://developer.zendesk.com/api-reference",
+      "expected_claims": [
+        "basic_auth",
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "basic_auth",
+        "mcp",
+        "oauth",
+        "token"
+      ]
+    },
+    {
+      "app": "Intercom",
+      "url": "https://developers.intercom.com/docs/references/introduction",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": [
+        "token"
+      ]
+    },
+    {
+      "app": "Freshdesk",
+      "url": "https://developers.freshdesk.com/api/",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": [
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Front",
+      "url": "https://dev.frontapp.com/",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Pylon",
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "expected_claims": [
+        "bearer",
+        "mcp",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "bearer",
+        "mcp",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "LiveAgent",
+      "url": "https://www.liveagent.com/features/api/",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key"
+      ]
+    },
+    {
+      "app": "Plain",
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Help Scout",
+      "url": "https://developer.helpscout.com/",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Gorgias",
+      "url": "https://developers.gorgias.com/",
+      "expected_claims": [
+        "api_key",
+        "basic_auth",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key",
+        "basic_auth",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Gladly",
+      "url": "https://developer.gladly.com/",
+      "expected_claims": [
+        "api_key",
+        "basic_auth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key",
+        "basic_auth"
+      ]
+    },
+    {
+      "app": "Slack",
+      "url": "https://api.slack.com/",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Twilio",
+      "url": "https://www.twilio.com/docs/usage/api",
+      "expected_claims": [
+        "api_key",
+        "basic_auth",
+        "mcp",
+        "token"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key",
+        "basic_auth",
+        "mcp",
+        "token"
+      ]
+    },
+    {
+      "app": "Zoho Cliq",
+      "url": "https://www.zoho.com/cliq/help/restapi/",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "url": "https://open.larksuite.com/document",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Pumble",
+      "url": "https://pumble.com/help/integrations/api",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Discord",
+      "url": "https://discord.com/developers/docs/intro",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Telegram",
+      "url": "https://core.telegram.org/",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "token"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key",
+        "mcp",
+        "token"
+      ]
+    },
+    {
+      "app": "WhatsApp Business",
+      "url": "https://developers.facebook.com/docs/whatsapp",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Aircall",
+      "url": "https://developer.aircall.io/",
+      "expected_claims": [
+        "basic_auth",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "token"
+      ],
+      "missing_claims": [
+        "basic_auth",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Vonage",
+      "url": "https://developer.vonage.com/",
+      "expected_claims": [
+        "api_key",
+        "jwt",
+        "mcp"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "jwt"
+      ],
+      "missing_claims": [
+        "api_key",
+        "mcp"
+      ]
+    },
+    {
+      "app": "Google Ads",
+      "url": "https://developers.google.com/google-ads/api/docs/start",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Meta Ads",
+      "url": "https://developers.facebook.com/docs/marketing-apis",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "LinkedIn Ads",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "GoHighLevel",
+      "url": "https://highlevel.stoplight.io/",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "oauth"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Mailchimp",
+      "url": "https://mailchimp.com/developer/",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Klaviyo",
+      "url": "https://developers.klaviyo.com/en",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "systeme.io",
+      "url": "https://developer.systeme.io/",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Pinterest",
+      "url": "https://developers.pinterest.com/docs/getting-started/authentication/",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Threads (Meta)",
+      "url": "https://developers.facebook.com/docs/threads",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "SendGrid",
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Shopify",
+      "url": "https://shopify.dev/docs/api",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp",
+        "token"
+      ],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "WooCommerce",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "expected_claims": [
+        "basic_auth",
+        "mcp",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "basic_auth",
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "BigCommerce",
+      "url": "https://developer.bigcommerce.com/docs/rest-catalog",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp",
+        "token"
+      ],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "url": "https://developer.adobe.com/commerce/webapi/",
+      "expected_claims": [
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Squarespace",
+      "url": "https://developers.squarespace.com/commerce-apis",
+      "expected_claims": [
+        "api_key",
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Ecwid",
+      "url": "https://api-docs.ecwid.com/",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "Gumroad",
+      "url": "https://help.gumroad.com/article/280-gumroad-api",
+      "expected_claims": [
+        "oauth",
+        "token"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "oauth",
+        "token"
+      ]
+    },
+    {
+      "app": "Amazon Selling Partner (SP-API)",
+      "url": "https://developer-docs.amazon.com/sp-api/",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "fanbasis",
+      "url": "https://stackgo.io/integration/sales-crm/fanbasis/",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "DataForSEO",
+      "url": "https://docs.dataforseo.com/",
+      "expected_claims": [
+        "basic_auth",
+        "mcp"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "basic_auth",
+        "mcp"
+      ]
+    },
+    {
+      "app": "SE Ranking",
+      "url": "https://seranking.com/api.html",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Ahrefs",
+      "url": "https://trackseo.pro/blog/ahrefs-pricing",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "token"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key",
+        "mcp",
+        "token"
+      ]
+    },
+    {
+      "app": "MrScraper",
+      "url": "https://docs.mrscraper.com/docs/features/activating-api",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Apify",
+      "url": "https://docs.apify.com/api/v2",
+      "expected_claims": [
+        "mcp",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Firecrawl",
+      "url": "https://docs.firecrawl.dev/",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Bright Data",
+      "url": "https://docs.brightdata.com/",
+      "expected_claims": [
+        "api_key",
+        "basic_auth",
+        "mcp"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "missing_claims": [
+        "basic_auth"
+      ]
+    },
+    {
+      "app": "Sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "expected_claims": [
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Waterfall.io",
+      "url": "https://www.waterfall.io/",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key"
+      ]
+    },
+    {
+      "app": "Clay",
+      "url": "https://developers.clay.com/",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "GitHub",
+      "url": "https://docs.github.com/rest",
+      "expected_claims": [
+        "jwt",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "jwt",
+        "oauth"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Vercel",
+      "url": "https://vercel.com/docs/rest-api",
+      "expected_claims": [
+        "bearer",
+        "mcp",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "bearer",
+        "mcp",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Netlify",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "oauth",
+        "token"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Cloudflare",
+      "url": "https://developers.cloudflare.com/api/",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Supabase",
+      "url": "https://supabase.com/docs/guides/api",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": [
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Neo4j",
+      "url": "https://neo4j.com/docs/mcp/current/",
+      "expected_claims": [
+        "basic_auth",
+        "bearer",
+        "mcp"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp"
+      ],
+      "missing_claims": [
+        "basic_auth",
+        "bearer"
+      ]
+    },
+    {
+      "app": "Snowflake",
+      "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+      "expected_claims": [
+        "basic_auth",
+        "jwt",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": [
+        "basic_auth",
+        "jwt"
+      ]
+    },
+    {
+      "app": "MongoDB Atlas",
+      "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Datadog",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Sentry",
+      "url": "https://docs.sentry.io/api/",
+      "expected_claims": [
+        "bearer",
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp",
+        "token"
+      ],
+      "missing_claims": [
+        "bearer",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Notion",
+      "url": "https://developers.notion.com/",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Airtable",
+      "url": "https://airtable.com/developers/web/api/introduction",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Linear",
+      "url": "https://developers.linear.app/docs",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "api_key",
+        "oauth"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Jira",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "expected_claims": [
+        "basic_auth",
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "basic_auth",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Asana",
+      "url": "https://developers.asana.com/docs",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Monday.com",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "ClickUp",
+      "url": "https://developer.clickup.com/docs",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Coda",
+      "url": "https://coda.io/developers/apis/v1",
+      "expected_claims": [
+        "mcp",
+        "token"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "token"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Smartsheet",
+      "url": "https://developers.smartsheet.com/",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp",
+        "token"
+      ],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "Harvest",
+      "url": "https://help.getharvest.com/api-v2/",
+      "expected_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "mcp",
+        "oauth",
+        "token"
+      ]
+    },
+    {
+      "app": "Stripe",
+      "url": "https://stripe.com/docs/api",
+      "expected_claims": [
+        "api_key",
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": [
+        "mcp",
+        "oauth"
+      ]
+    },
+    {
+      "app": "Plaid",
+      "url": "https://plaid.com/docs/",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Binance",
+      "url": "https://binance-docs.github.io/apidocs/spot/en/",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Paygent Connect",
+      "url": "https://www.nmi.com/",
+      "expected_claims": [
+        "api_key",
+        "basic_auth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key",
+        "basic_auth"
+      ]
+    },
+    {
+      "app": "iPayX",
+      "url": "https://ipayx.ai/docs",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key"
+      ]
+    },
+    {
+      "app": "QuickBooks",
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "oauth"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Xero",
+      "url": "https://developer.xero.com/documentation/",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Brex",
+      "url": "https://developer.brex.com/",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp"
+      ],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "Ramp",
+      "url": "https://docs.ramp.com/developer-api/v1/overview",
+      "expected_claims": [
+        "mcp",
+        "oauth"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp"
+      ],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "PitchBook",
+      "url": "https://pitchbook.com/help/PitchBook-api",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "NotebookLM",
+      "url": "https://cloud.google.com/gemini",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "Otter.ai",
+      "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+      "expected_claims": [
+        "api_key",
+        "bearer",
+        "mcp"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "api_key",
+        "bearer"
+      ],
+      "missing_claims": [
+        "mcp"
+      ]
+    },
+    {
+      "app": "Fathom",
+      "url": "https://fathom.video/",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "partial",
+      "note": "Some claims confirmed on the page; others not found -- worth a manual look.",
+      "satisfied_claims": [
+        "mcp"
+      ],
+      "missing_claims": [
+        "api_key"
+      ]
+    },
+    {
+      "app": "Consensus",
+      "url": "https://consensus.app/",
+      "expected_claims": [
+        "oauth"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "oauth"
+      ]
+    },
+    {
+      "app": "Reducto",
+      "url": "https://reducto.ai/",
+      "expected_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Devin",
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "expected_claims": [
+        "api_key",
+        "bearer",
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key",
+        "bearer",
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "higgsfield",
+      "url": "https://higgsfield.ai/",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key"
+      ]
+    },
+    {
+      "app": "Mermaid CLI",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "expected_claims": [
+        "mcp"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "mcp"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "YouTube Transcript (transcriptapi.com)",
+      "url": "https://transcriptapi.com/",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "verified",
+      "note": "Every recorded auth/MCP claim has a matching term on the rendered page.",
+      "satisfied_claims": [
+        "api_key"
+      ],
+      "missing_claims": []
+    },
+    {
+      "app": "Grain",
+      "url": "https://grain.com/",
+      "expected_claims": [
+        "api_key"
+      ],
+      "status": "no_match",
+      "note": "None of the recorded claims were found on the rendered page -- possible drift.",
+      "satisfied_claims": [],
+      "missing_claims": [
+        "api_key"
+      ]
+    }
+  ]
+}
